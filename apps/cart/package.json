@@ -36,7 +36,7 @@
           "cwd": "apps/cart"
         },
         "dependsOn": [
-          "shell:dev"
+          "@react-mfe/shell:dev"
         ]
       },
       "build": {
