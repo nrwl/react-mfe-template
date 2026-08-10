@@ -15,7 +15,10 @@ export default defineConfig({
   build: { target: 'chrome89' },
   resolve: {
     alias: {
-      '@react-mfe/ui': resolve(__dirname, '../../packages/ui/src/index.ts'),
+      '@react-mfe/ui': resolve(
+        import.meta.dirname,
+        '../../packages/ui/src/index.ts',
+      ),
     },
   },
   plugins: [
