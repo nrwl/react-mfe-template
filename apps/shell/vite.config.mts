@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { federation } from '@module-federation/vite';
 import { resolve } from 'path';
+import { nxReadySignal } from '@nx/vite/plugins/nx-ready-signal.plugin';
 
 const PORT = 4200;
 
@@ -32,5 +33,6 @@ export default defineConfig({
       },
     }),
     react(),
+    nxReadySignal(),
   ],
 });
